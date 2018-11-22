@@ -1,0 +1,19 @@
+$foreground: rgba(0, 0, 0, 0.5);
+$secondary: #e61587;
+$primary: #bf00ff;
+$background: #06052b;
+$section: rgba(0, 0, 0, 0.4);
+
+@mixin glow($size, $color) {
+  $all: ();
+  @for $i from 1 through 5 {
+    $all: append($all, 0 0 ($i*$i*$size) + px $color, comma);
+  }
+  @warn $all;
+  text-shadow: $all;
+}
+
+:export {
+  primary: $primary;
+  secondary: $secondary;
+}
