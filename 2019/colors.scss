@@ -1,0 +1,14 @@
+$foreground: rgba(0, 0, 0, 0.5);
+$secondary: #afafaf;
+$primary: #5b677a;
+$background: #001b44;
+$section: rgba(0, 0, 0, 0.4);
+
+@mixin glow($size, $color) {
+
+}
+
+:export {
+  primary: $primary;
+  secondary: $secondary;
+}
