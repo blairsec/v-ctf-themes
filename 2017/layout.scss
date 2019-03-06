@@ -8,9 +8,11 @@
 
 .logoimage {
   background-image: url('theme/logo.svg');
-  background-size: contain;
+  background-size: 100% calc(100% - 1.5em);
+  background-clip: content-box;
+  padding-top: 1.5em;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
 }
 
 * {
