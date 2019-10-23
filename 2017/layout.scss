@@ -12,11 +12,9 @@
 
 .logoimage {
   background-image: url('theme/logo.svg');
-  background-size: 100% calc(100% - 1.5em);
-  background-clip: content-box;
-  padding-top: 1.5em;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
 }
 
 * {
