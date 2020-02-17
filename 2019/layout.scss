@@ -231,6 +231,9 @@ table.scoreboard, main.profile section.team {
   margin-bottom: 1rem;
   label {
     display: inline-block;
+    &:last-child {
+      margin-left: 0.4rem;
+    }
   }
 }
 
