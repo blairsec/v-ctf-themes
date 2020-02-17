@@ -1,13 +1,5 @@
 @import 'colors';
 
-main.challenges > section {
-  display: none;
-}
-
-main.challenges:after {
-  content: "2017 challenges are not currently up. Sorry!";
-}
-
 .challengeList {
   font-size: 0.8em;
   list-style-type: none;

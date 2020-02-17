@@ -15,11 +15,11 @@
     flex-wrap: wrap;
     background-color: $foreground;
     transition: background-color 0.3s;
-    padding: 2em;
+    padding: 2.1em 2em;
     margin: 1em;
     width: 12em;
     cursor: pointer;
-    height: 7em;
+    height: 8em;
 
     &.solved {
       background-color: transparentize($primary, 0.3);
@@ -57,6 +57,19 @@
 }
 
 .challengeModal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+
+  * {
+    pointer-events: auto;
+  }
 
   .title, .category {
     overflow-wrap: normal;

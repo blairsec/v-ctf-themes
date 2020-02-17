@@ -15,6 +15,17 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  display: none;
+}
+
+#banner2020 {
+  display: block !important;
+  padding-bottom: 0.5em;
+  .logoimage {
+    display: block;
+    width: 150px;
+    height: 150px !important;
+  }
 }
 
 * {
@@ -176,18 +187,19 @@ code {
   height: 25em;
   text-align: center;
   border-radius: 100%;
-  border-top: 10px solid $primary;
-  border-right: 10px solid $primary;
-  border-bottom: 10px solid black;
-  border-left: 10px solid black;
+  border-top: 10px solid white;
+  border-right: 10px solid white;
+  border-bottom: 10px solid rgba(255, 255, 255, 0.345);
+  border-left: 10px solid rgba(255, 255, 255, 0.345);
   animation: spin 1.5s infinite linear;
 }
 
 .load-symbol-container {
   background-image: url('theme/logo.svg');
   box-shadow: inset 0px 0px 50px rgba(0,0,0,0.9);
-  background-size: 25em 25em;
-  background-position: center;
+  background-size: auto 22.5em;
+  background-position: center 1em;
+  background-repeat: no-repeat;
   border-radius: 100%;
 }
 
@@ -303,6 +315,11 @@ table.scoreboard, main.profile section.team {
   .load-symbol {
     width: 70vw;
     height: 70vw;
+  }
+
+  .load-symbol-container {
+    background-size: auto calc(70vw * 0.9);
+    background-position: center calc(70vw * 1/22.5);
   }
 
   main {

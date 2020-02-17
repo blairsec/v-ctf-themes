@@ -216,6 +216,13 @@ table.scoreboard, main.profile section.team {
   }
 }
 
+.scoreboard-filters {
+  margin-bottom: 1rem;
+  label {
+    display: inline-block;
+  }
+}
+
 .email-button-group {
   margin-bottom: 0.5em;
 }
