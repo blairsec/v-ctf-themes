@@ -117,7 +117,16 @@ canvas {
   z-index: -100;
 }
 
-canvas {
+body:before {
   background: radial-gradient(ellipse at bottom,$primary 0,#000000 90%, #000000 100%);
+  background-size: cover;
+  background-position: center center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: -101;
 }
 </style>
