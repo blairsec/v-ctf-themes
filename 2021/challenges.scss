@@ -76,6 +76,10 @@
     display: inline;
   }
 
+  .description a {
+    text-decoration: underilne;
+  }
+
   .category {
     font-family: 'Orbitron';
     font-size: 2em;
@@ -187,10 +191,9 @@
 
   a {
     font-weight: bold;
-    text-decoration: underline;
   }
   a:hover {
-    text-decoration: underline;
+    text-decoration: inherit;
     color: darken(#bcbcbc, 20%);
   }
 }
