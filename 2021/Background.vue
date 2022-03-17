@@ -3,7 +3,10 @@
 </template>
 
 <script>
-import colors from './colors.scss'
+const colors = {
+  primary: "#940800",
+  secondary: "#9e9493"
+}
 
 // from https://gist.github.com/mjackson/5311256
 function rgbToHsl (r, g, b) {

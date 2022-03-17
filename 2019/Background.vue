@@ -1,3 +1,7 @@
+<template>
+  <div class="bg"></div>
+</template>
+
 <style lang="scss">
 @import './colors.scss';
 
