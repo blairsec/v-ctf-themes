@@ -91,8 +91,6 @@ h4 {
 }
 
 main > h1 {
-  @include glow(2, $primary);
-
   @media screen and (max-width: 600px) {
     font-size: 10vw;
   }
@@ -151,7 +149,6 @@ code {
 
 .admin h2.competition {
   padding-top: 0.5em;
-  @include glow(2, $primary);
 }
 
 .home {
@@ -169,10 +166,6 @@ code {
 
   & > h1:first-of-type {
     padding-right: 0.35em;
-  }
-
-  & > h1:nth-of-type(2) {
-    @include glow(2, $secondary)
   }
 
   & > h1:nth-of-type(2) + section {
