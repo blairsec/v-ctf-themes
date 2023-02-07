@@ -1,0 +1,14 @@
+$foreground: rgba(0, 0, 0, 0.5);
+$secondary: #D5B9B2;
+$primary: #e2ca9b;
+$background: #915254;
+$section: rgba(0, 0, 0, 0.4);
+
+@mixin glow($size, $color) {
+  $all: ();
+  @for $i from 1 through 5 {
+    $all: append($all, 0 0 ($i*$i*$size) + px $color, comma);
+  }
+  @warn $all;
+  text-shadow: $all;
+}
